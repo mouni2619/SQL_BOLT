@@ -2,9 +2,9 @@
 
 # Below I provided Notes Regarding SQL BOLT TASK
 
-SQL Lesson 1: SELECT queries 101
+# SQL Lesson 1: SELECT queries 101
 
-Exercise 1 — Tasks
+ Exercise 1 — Tasks
 
 1)Find the title of each film ✓
 
@@ -28,7 +28,7 @@ Exercise 1 — Tasks
 
 ------------------------------------------------------------------------------------------------------------
 
-SQL Lesson 2: Queries with constraints (Pt. 1)
+# SQL Lesson 2: Queries with constraints (Pt. 1)
 
 Exercise 2 — Tasks
 
@@ -53,7 +53,7 @@ SELECT title,year FROM movies
 where  id in (1,2,3,4,5)
 
 ------------------------------------------------------------------------------------------------------------
-SQL Lesson 3: Queries with constraints (Pt. 2)
+# SQL Lesson 3: Queries with constraints (Pt. 2)
 
 Exercise 3 — Tasks
 1)Find all the Toy Story movies ✓
@@ -77,7 +77,7 @@ SELECT title FROM movies
 where title  like "%WALL-%";
 
 ------------------------------------------------------------------------------------------------------------
-SQL Lesson 4: Filtering and sorting Query results
+# SQL Lesson 4: Filtering and sorting Query results
 
 Exercise 4 — Tasks
 
@@ -98,7 +98,8 @@ SELECT title,year FROM movies order by title  limit 5 ;
 SELECT title,year FROM movies order by title  limit 5 offset 5 ; 
 
 ------------------------------------------------------------------------------------------------------------
-SQL Review: Simple SELECT Queries
+# SQL Review: Simple SELECT Queries
+
 Review 1 — Tasks
 
 1)List all the Canadian cities and their populations ✓
@@ -132,7 +133,7 @@ SELECT * FROM north_american_cities where country like "%mexico%" order by popul
 SELECT city, population FROM north_american_cities where country like "%United States%" order by population desc limit 2 offset 2
 
 ------------------------------------------------------------------------------------------------------------
-SQL Lesson 6: Multi-table queries with JOINs
+# SQL Lesson 6: Multi-table queries with JOINs
 
 
 Exercise 6 — Tasks
@@ -157,7 +158,7 @@ INNER JOIN Movies
     ON Movies .Id = Boxoffice.Movie_id order by rating desc
  ------------------------------------------------------------------------------------------------------------
 
-SQL Lesson 7: OUTER JOINs
+# SQL Lesson 7: OUTER JOINs
 
 Exercise 7 — Tasks
 1)Find the list of all buildings that have employees ✓
@@ -174,7 +175,7 @@ SELECT  * FROM Buildings
 SELECT distinct Building_name, role FROM  Buildings  left join Employees on Buildings .Building_name=Employees .Building
 
 ------------------------------------------------------------------------------------------------------------
-SQL Lesson 8: A short note on NULLs
+# SQL Lesson 8: A short note on NULLs
 
 
 Exercise 8 — Tasks
@@ -188,7 +189,7 @@ where building is null;
 SELECT * from Buildings left join Employees on Buildings.Building_name = Employees .Building where Years_employed is null
 
 ------------------------------------------------------------------------------------------------------------
-SQL Lesson 9: Queries with expressions
+# SQL Lesson 9: Queries with expressions
 
 Exercise 9 — Tasks
 
@@ -211,7 +212,7 @@ FROM movies
 inner join Boxoffice on movies.id = Boxoffice.Movie_id 
 where year%2=0;
 ------------------------------------------------------------------------------------------------------------
-SQL Lesson 10: Queries with aggregates (Pt. 1)
+# SQL Lesson 10: Queries with aggregates (Pt. 1)
 
 Exercise 10 — Tasks
 
@@ -229,7 +230,7 @@ Exercise 10 — Tasks
 
 
 ------------------------------------------------------------------------------------------------------------
-SQL Lesson 11: Queries with aggregates (Pt. 2)
+# SQL Lesson 11: Queries with aggregates (Pt. 2)
 
 Exercise 11 — Tasks
 
@@ -249,7 +250,7 @@ SELECT  role, sum(years_employed) as number_of_Artists FROM employees
 group by role HAVING role="Engineer"
 
 ------------------------------------------------------------------------------------------------------------
-SQL Lesson 12: Order of execution of a Query
+# SQL Lesson 12: Order of execution of a Query
 
 Exercise 12 — Tasks
 
@@ -267,7 +268,7 @@ group by director;
 
 ------------------------------------------------------------------------------------------------------------
 
-SQL Lesson 13: Inserting rows
+# SQL Lesson 13: Inserting rows
 
 Exercise 13 — Tasks
 
@@ -282,7 +283,7 @@ INSERT INTO Boxoffice
 VALUES (4, "8.7",340000000,270000000)
 
 ------------------------------------------------------------------------------------------------------------
-SQL Lesson 14: Updating rows
+# SQL Lesson 14: Updating rows
 
 Exercise 14 — Tasks
 
@@ -306,7 +307,7 @@ title="Toy Story 3"
    where title="Toy Story 8"
 
 ------------------------------------------------------------------------------------------------------------
-SQL Lesson 15: Deleting rows
+# SQL Lesson 15: Deleting rows
 
 Exercise 15 — Tasks
 
@@ -321,7 +322,7 @@ Exercise 15 — Tasks
  WHERE Director="Andrew Stanton";
 
 ------------------------------------------------------------------------------------------------------------
-SQL Lesson 16: Creating tables
+# SQL Lesson 16: Creating tables
 
 Exercise 16 — Tasks
 
@@ -339,7 +340,7 @@ This table has no constraints. ✓
  );
 
 ------------------------------------------------------------------------------------------------------------
-SQL Lesson 17: Altering tables
+# SQL Lesson 17: Altering tables
 
 Exercise 17 — Tasks
 
@@ -357,7 +358,7 @@ Exercise 17 — Tasks
 
 ------------------------------------------------------------------------------------------------------------
 
-SQL Lesson 18: Dropping tables
+# SQL Lesson 18: Dropping tables
 
 Exercise 18 — Tasks
 
