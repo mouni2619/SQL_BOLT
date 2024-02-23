@@ -155,7 +155,8 @@ INNER JOIN Movies
 
 SELECT * FROM Boxoffice 
 INNER JOIN Movies   
-    ON Movies .Id = Boxoffice.Movie_id order by rating desc
+ON Movies .Id = Boxoffice.Movie_id order by rating desc
+
  ------------------------------------------------------------------------------------------------------------
 
 # SQL Lesson 7: OUTER JOINs
@@ -209,8 +210,9 @@ inner join Boxoffice on movies.id = Boxoffice.Movie_id ;
 
 SELECT title, year
 FROM movies
-inner join Boxoffice on movies.id = Boxoffice.Movie_id 
-where year%2=0;
+inner join Boxoffice ON movies.id=Boxoffice.Movie_id
+WHERE year%2=0
+
 ------------------------------------------------------------------------------------------------------------
 # SQL Lesson 10: Queries with aggregates (Pt. 1)
 
