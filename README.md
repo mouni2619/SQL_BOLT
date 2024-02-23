@@ -1,6 +1,6 @@
-#TASK IS ABOUT SQL BOLT
+# TASK IS ABOUT SQL BOLT
 
-#Below I provided Notes Regarding SQL BOLT TASK
+# Below I provided Notes Regarding SQL BOLT TASK
 
 SQL Lesson 1: SELECT queries 101
 
